@@ -1,0 +1,169 @@
+#main-boxes-row {
+    background: var(--grey-row-bg-color);
+    padding-bottom: 1px;
+}
+
+#main-boxes {
+    width: 92%;
+    margin: -50px auto 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#main-boxes h4 {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--title-font-color);
+    font-style: italic;
+    font-weight: 600;
+}
+#main-boxes a {
+    color: var(--main-boxes-link-color);
+    text-transform: uppercase;
+    font-style: italic;
+    transition: none;
+}
+#main-boxes i {
+    color: var(--link-color);
+    font-size: 2.5rem;
+}
+#main-boxes > div {
+    background: var(--main-boxes-bg-color);
+    padding: 50px;
+    box-shadow: 0 2px 18px var(--main-boxes-box-shadow-color);
+    transition: var(--base-transition);
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+}
+#main-boxes > div p {
+    text-align: center;
+}
+#main-boxes > div::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    background: var(--main-boxes-hover-bg-color);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+#main-boxes > div::after {
+    background-blend-mode: multiply;
+    background: url('/images/main_box_bg.webp');
+    background-size: cover;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity .2s ease, margin .4s ease;
+}
+#main-boxes > div:first-child {
+    border-radius: 4px 0 0 4px;
+}
+#main-boxes > div:last-child {
+    border-radius: 0 4px 4px 0;
+}
+#main-boxes > div:hover {
+    transform: translate(0, -20px);
+}
+#main-boxes > div:hover::before,
+#main-boxes > div:hover::after {
+    opacity: 1;
+}
+#main-boxes > div:hover::after {
+    margin: -8px;
+}
+
+.main-box-content {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#main-boxes > div:hover h4 {
+    color: var(--main-boxes-boxes-hover-title-color);
+}
+#main-boxes > div:hover a {
+    color: var(--main-boxes-hover-link-color);
+}
+#main-boxes > div:hover i {
+    color: var(--main-boxes-hover-link-color);
+}
+
+.main-box-content p:last-child {
+    padding-top: 20px;
+    margin-top: auto;
+}
+
+
+
+#fitness-classes-row {
+    background: var(--grey-row-bg-color);
+}
+#fitness-classes {
+    width: 92%;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: 2fr 3fr 300px;
+    align-items: center;
+    gap: 30px;
+}
+#fitness-title-div {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#fitness-title {
+    color: var(--fitness-title-color);
+}
+#fitness-color-title {
+    background-image: var(--gradient-title-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+@media screen and (max-width: 980px) {
+    #main-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #main-boxes > div:first-child {
+        border-radius: 4px 0 0 0;
+    }
+    #main-boxes > div:nth-child(2) {
+        border-radius: 0 4px 0 0;
+    }
+    #main-boxes > div:nth-child(3) {
+        border-radius: 0 0 0 4px;
+    }
+    #main-boxes > div:last-child {
+        border-radius: 0 0 4px 0;
+    }
+    #main-boxes > div:hover {
+        transform: translate(0, 0);
+    }
+
+    #fitness-classes {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #main-boxes {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

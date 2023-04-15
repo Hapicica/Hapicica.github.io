@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,500;1,100;1,200;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,500;1,100;1,200;1,500&display=swap');
+
+:root {
+    --base-font-family: 'Sarabun', sans-serif;
+    --base-bg-color: #ffffff;
+    --base-font-color: #9d9d9d;
+    --base-font-size: 17px;
+    --base-font-weight: 400;
+    --base-transition: all 0.3s ease;
+    --base-line-hight: 1.5em;
+    --link-color: #6aa317;
+
+    --title-font-family:  'Barlow Semi Condensed', sans-serif;
+    --title-font-color: #1d1d1d;
+    --gradient-title-color: linear-gradient(45deg, #4ead3a 20%, #27a68f);
+
+    --button-font-color: #ffffff;
+    --button-bg-color: #87c232;
+    --button-hover-bg-color: #6aa317;
+    --button-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    --empty-button-border-color: #FFFFFF33;
+    --empty-button-hover-color: #000000;
+    --empty-button-after-color: #ffffff;
+
+    --grey-row-bg-color: #191919;
+
+
+    /*header*/
+    --header-bg-color: #000000;
+    --header-font-color: #979797;
+    --header-link-hover-color: #ffffff;
+    --slider-gradient-color: rgba(0, 0, 0, 0.5);
+    --logo-color: invert(68%) sepia(74%) saturate(412%) hue-rotate(39deg) brightness(89%) contrast(92%);
+    --nav-font-color: #bdbdbd;
+    --nav-font-hover-color: #ffffff;
+    --nav-border-color: rgba(189, 189, 189, 0.5);
+    --submenu-bg-color: #6aa317;
+    --submenu-shadow-color: 0 1px 3px rgba(0, 0, 0, 0.2);
+    --submenu-link-border-color: rgba(250, 250, 250, 0.2);
+    --submenu-link-before-color: rgba(250, 250, 250, 0.59);
+    --mobilmenu-color: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+    --mobilmenu-bg-color: #6aa317;
+    --mobil-submenu-bg-color: #87C232;
+    --subtitle-color: #ffffff;
+
+    /*main*/
+    --main-boxes-bg-color: #ffffff;
+    --main-boxes-box-shadow-color: rgba(0, 0, 0, 0.09);
+    --main-boxes-hover-bg-color: #00000099;
+    --main-boxes-boxes-hover-title-color: #ffffff;
+    --main-boxes-link-color: #000000;
+    --main-boxes-hover-link-color: #F6D72D;
+    --main-boxes-icon-color: invert(45%) sepia(98%) saturate(370%) hue-rotate(42deg) brightness(101%) contrast(93%);
+    --main-boxes-hover-icon-color: invert(99%) sepia(99%) saturate(6066%) hue-rotate(330deg) brightness(99%) contrast(95%);
+
+    --fitness-title-color: #ffffff;
+}
