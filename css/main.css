@@ -53,7 +53,7 @@
 }
 #main-boxes > div::after {
     background-blend-mode: multiply;
-    background: url('/images/main_box_bg.webp');
+    background: url('../images/main_box_bg.webp');
     background-size: cover;
     position: absolute;
     content: "";
