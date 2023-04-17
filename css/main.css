@@ -141,7 +141,7 @@
 #coaches {
     width: 92%;
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 15px 0 50px 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
@@ -231,6 +231,75 @@
 #coaches > div:hover .coach-details {
     bottom: 0;
     opacity: 1;
+}
+
+
+#recent-blogs {
+    width: 92%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 400px 100px 400px;
+}
+#recent-blogs > div {
+    overflow: hidden;
+    position: relative;
+}
+#recent-blogs > div:nth-child(even) {
+    grid-row: span 2;
+}
+#recent-blogs > div:nth-child(5) {
+    order: 5;
+}
+.blog-pic {
+    position: relative;
+}
+.blog-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+.blog-pic::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--coach-img-before-bg-color);
+    transition: all .2s ease-in-out;
+}
+
+.blog-details {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+#recent-blogs .blog-details h3 {
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    font-family: var(--title-font-family);
+}
+#recent-blogs > div:nth-child(even) .blog-details,
+#recent-blogs > div:nth-child(even) .blog-details h3 {
+    color: var(--blog-even-color);
+}
+#recent-blogs > div:nth-child(odd) .blog-details h3 {
+    color: var(--title-font-color)
+}
+.blog-title .date {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--title-font-color);
+}
+#recent-blogs > div:nth-child(odd) .blog-title {
+    background: var(--blog-odd-title-bg-color);
+}
+#recent-blogs > div:nth-child(even) .blog-title .date {
+    -webkit-text-stroke: 1px var(--blog-even-date-border-color)
 }
 
 

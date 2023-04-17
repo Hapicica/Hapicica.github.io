@@ -62,4 +62,8 @@
     --coach-link-hover-bg-color: rgba(255, 255, 255, 0.3);
     --coach-img-before-bg-color: linear-gradient(0deg, rgba(0, 0, 0, 0.55) 15%, rgba(255, 255, 255, 0) 65%);
     --coach-img-hover-before-bg-color: rgba(0, 0, 0, 0.7);
+
+    --blog-odd-title-bg-color: #ffffff;
+    --blog-even-date-border-color: #ffffff;
+    --blog-even-color: #ffffff;
 }
