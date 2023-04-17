@@ -135,6 +135,105 @@
 }
 
 
+#coach-row {
+    background: var(--grey-row-bg-color);
+}
+#coaches {
+    width: 92%;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+#coaches > div {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+#coaches > div::before {
+    position: absolute;
+    content: attr(data-title);
+    bottom: 40px;
+    color: var(--coach-title-color);
+    z-index: 1;
+    transition: var(--base-transition);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+
+.coach-img {
+    position: relative;
+    line-height: 0;
+}
+.coach-img > img {
+    height: 450px;
+    object-fit: cover;
+    width: 100%;
+    object-position: top;
+}
+.coach-img::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--coach-img-before-bg-color);
+    transition: all .2s ease-in-out;
+}
+
+.coach-details {
+    position: absolute;
+    opacity: 0;
+    bottom: -200px;
+    transition: var(--base-transition);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.coach-details h4 {
+    color: var(--link-color);
+    text-transform: uppercase;
+    padding: 0 20px;
+    font-weight: 600;
+}
+.coach-details p {
+    padding: 0 20px;
+    text-align: center;
+}
+.coach-details a {
+    margin-top: auto;
+    padding: 25px 20px;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    width: 100%;
+    background-color: var(--coach-link-bg-color);
+    text-align: center;
+    color: var(--coach-link-color);
+    text-transform: uppercase;
+}
+.coach-details a:hover {
+    background: var(--coach-link-hover-bg-color);
+}
+
+#coaches > div:hover::before {
+    opacity: 0;
+}
+#coaches > div:hover .coach-img::before {
+    background-color: var(--coach-img-hover-before-bg-color);
+}
+#coaches > div:hover .coach-details {
+    bottom: 0;
+    opacity: 1;
+}
+
+
 
 @media screen and (max-width: 980px) {
     #main-boxes {
@@ -159,11 +258,19 @@
     #fitness-classes {
         grid-template-columns: 1fr;
     }
+
+    #coaches {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 768px) {
     #main-boxes {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    #coaches {
+        grid-template-columns: 1fr;
     }
 }

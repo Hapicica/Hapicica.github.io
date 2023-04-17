@@ -55,4 +55,11 @@
     --main-boxes-hover-icon-color: invert(99%) sepia(99%) saturate(6066%) hue-rotate(330deg) brightness(99%) contrast(95%);
 
     --fitness-title-color: #ffffff;
+
+    --coach-title-color: #ffffff;
+    --coach-link-color: #ffffff;
+    --coach-link-bg-color: rgba(255, 255, 255, 0.2);
+    --coach-link-hover-bg-color: rgba(255, 255, 255, 0.3);
+    --coach-img-before-bg-color: linear-gradient(0deg, rgba(0, 0, 0, 0.55) 15%, rgba(255, 255, 255, 0) 65%);
+    --coach-img-hover-before-bg-color: rgba(0, 0, 0, 0.7);
 }
