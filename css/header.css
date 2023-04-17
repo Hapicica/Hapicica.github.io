@@ -27,7 +27,7 @@
 }
 
 #slider {
-    background-image: linear-gradient(to bottom, var(--slider-gradient-color) 0%, var(--slider-gradient-color) 80%, var(--grey-row-bg-color) 95%), url('../images/slider.webp ');
+    background-image: linear-gradient(to bottom, var(--slider-gradient-color) 0%, var(--slider-gradient-color) 86%, var(--grey-row-bg-color) 95%), url('../images/slider.webp ');
     background-size: cover;
     min-height: 800px;
     display: grid;
