@@ -119,6 +119,7 @@ h1 {
     text-decoration: none;
     text-align: center;
     line-height: 1em;
+    word-break: break-word;
 }
 h2 {
     margin: 10px 0 30px 0;
@@ -131,6 +132,7 @@ h2 {
     text-decoration: none;
     text-align: left;
     line-height: 1em;
+    word-break: break-word;
 }
 h3 {
     margin: 15px 0;

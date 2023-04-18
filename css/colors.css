@@ -66,4 +66,6 @@
     --blog-odd-title-bg-color: #ffffff;
     --blog-even-date-border-color: #ffffff;
     --blog-even-color: #ffffff;
+    --blog-img-before-bg-color: rgba(0, 0, 0, 0.2);
+    --blog-img-hover-before-bg-color: rgba(0, 0, 0, 0.4);
 }
