@@ -339,6 +339,52 @@
 
 
 
+#prices-row {
+    background: var(--grey-row-bg-color);
+}
+#prices {
+    width: 92%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+}
+
+#prices h2 {
+    grid-column: 1/-1;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: var(--gradient-title-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+#prices .column2 {
+    grid-column: span 2;
+}
+#prices .column3 {
+    grid-column: span 3;
+}
+#prices > div {
+    background: var(--prices-box-bg-color);
+    border-radius: 4px;
+    padding: 20px;
+    transition: var(--base-transition);
+}
+#prices > div:hover {
+    outline: 2px solid var(--prices-box-outline-color);
+}
+#prices > div.recommended-price {
+    background: var(--prices-recommended-box-bg-color);
+}
+#prices > div.recommended-price:hover {
+    outline: 2px solid var(--prices-recommended-box-bg-color);
+}
+
+
+
 @media screen and (max-width: 980px) {
     #main-boxes {
         grid-template-columns: repeat(2, 1fr);

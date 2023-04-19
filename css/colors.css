@@ -68,4 +68,8 @@
     --blog-even-color: #ffffff;
     --blog-img-before-bg-color: rgba(0, 0, 0, 0.2);
     --blog-img-hover-before-bg-color: rgba(0, 0, 0, 0.4);
+
+    --prices-box-bg-color: #1F1F1F;
+    --prices-box-outline-color: #6aa317;
+    --prices-recommended-box-bg-color: #ffffff;
 }
